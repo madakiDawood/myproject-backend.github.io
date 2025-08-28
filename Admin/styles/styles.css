@@ -1,0 +1,138 @@
+:root{
+      --sidebar-width: 250px;
+      --sidebar-collapsed: 80px;
+    }
+    html, body { height: 100%; }
+    body { overflow-x: hidden; background: #f8f9fa; }
+
+    /* Top bar (hamburger always visible) */
+    .topbar {
+      position: sticky; top: 0; z-index: 1030;
+      background: #fff;
+    }
+
+    /* Layout: sidebar + main side-by-side on desktop */
+    #layout {
+      display: flex;
+      min-height: calc(100vh - 56px); /* minus topbar height */
+    }
+
+    /* Sidebar (desktop behavior) */
+    #sidebar {
+      background: #212529;
+      color: #fff;
+      width: var(--sidebar-width);
+      flex: 0 0 var(--sidebar-width);
+      transition: width .3s ease, transform .3s ease;
+      padding: 1rem;
+    }
+    #sidebar.collapsed {
+      width: var(--sidebar-collapsed);
+      flex-basis: var(--sidebar-collapsed);
+    }
+    #sidebar .sidebar-text { transition: opacity .2s; }
+    #sidebar.collapsed .sidebar-text { display: none; }
+    #sidebar .nav-link {
+      color: #fff;
+      display: flex; align-items: center; gap: .6rem;
+      padding: .5rem .75rem; border-radius: .5rem;
+    }
+    #sidebar .nav-link:hover { background: rgba(255,255,255,.08); }
+
+    /* Dropdown styling */
+    #sidebar .dropdown-menu {
+      background: #343a40; border: 0; border-radius: .5rem;
+      box-shadow: 0 10px 24px rgba(0,0,0,.25);
+      overflow: hidden; padding: .25rem;
+    }
+    #sidebar .dropdown-item { color: #fff; border-radius: .35rem; }
+    #sidebar .dropdown-item:hover { background: #495057; color: #ffc107; }
+
+    /* Main */
+    #main {
+      flex: 1 1 auto;
+      padding: 1.25rem;
+      min-width: 0;
+    }
+
+    /* Mobile behavior: sidebar off-canvas */
+    @media (max-width: 768px) {
+      #layout { position: relative; }
+      #sidebar {
+        position: fixed;
+        top: 56px;             /* sit under the topbar */
+        bottom: 0; left: 0;
+        transform: translateX(-100%);
+        width: var(--sidebar-width);
+        flex: none;
+        z-index: 1050;
+      }
+      #sidebar.open { transform: translateX(0); }
+      #main { padding: 1rem; } /* no margin-left needed on mobile */
+      /* Backdrop for mobile */
+      #backdrop {
+        position: fixed; inset: 56px 0 0 0; /* under the topbar */
+        background: rgba(0,0,0,.35);
+        display: none; z-index: 1040;
+      }
+      #backdrop.show { display: block; }
+    }
+/* ----------- DROPDOWN MENU ----------- */
+.nav-item .dropdown-menu {
+  background: #495057;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 0.5rem;
+}
+.dropdown-menu .dropdown-item {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.dropdown-menu .dropdown-item:hover {
+  background: #6c757d;
+  color: #ffc107;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+  .myaside {
+    position: fixed;
+    z-index: 2000;
+    height: 100vh;
+  }
+  main {
+    margin-left: 0 !important;
+  }
+}
+
+
+/* ----------- ALL CARS PAGE STYLES ----------- */
+.table img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.car-description {
+  max-width: 350px;
+}
+
+.table-responsive {
+  padding: 1rem;
+  overflow:visible;
+}
+
+.card span{
+  font-weight: bold;
+}
