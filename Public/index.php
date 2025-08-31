@@ -1,5 +1,8 @@
-  <?php
-    include '../include/database.php';
+<?php
+    include './include/database.php';
+    include './include/header.php';
+    include './include/navigation.php';
+    include './include/footer.php'
   ?>
 <body>
   <!-- Navigation Bar -->
@@ -32,7 +35,7 @@
     <div class="row g-4 inventory-row">
       <div class="col-md-4">
         <div class="card inventory-card h-100 shadow">
-          <img src="/images/audi.jpeg" class="card-img-top inventory-img" alt="Car 1">
+          <img src="images/audi.jpeg" class="card-img-top inventory-img" alt="Car 1">
           <div class="card-body">
             <h5 class="card-title">2023 Audi Q8</h5>
             <p class="card-text">Automatic, Petrol, 15,000 km<br>Price: N18,000,000</p>
@@ -65,7 +68,7 @@
 
     </div>
 <div class="text-center my-4">
-  <a href="inventory.html" class="btn btn-outline-secondary btn-lg view-more-btn">View More</a>
+  <a href="./inventory.php" class="btn btn-outline-secondary btn-lg view-more-btn">View More</a>
 </div>
   </div>
 

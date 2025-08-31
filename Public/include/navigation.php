@@ -1,6 +1,6 @@
  <nav class="navbar navbar-expand-lg fixed-top bg-opacity-custom shadow" style="z-index: 1050;">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <a class="navbar-brand d-flex align-items-center" href="./index.php">
         <span class="brand-normal">My</span>
         <span class="brand-showroom ms-1">Showroom</span>
       </a>
@@ -10,10 +10,10 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link nav-hover" href="index.html">Home</a>
+            <a class="nav-link nav-hover" href="./index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-hover" href="inventory.html">Inventory</a>
+            <a class="nav-link nav-hover" href="./inventory.php">Inventory</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle nav-hover" href="#" id="financingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -26,10 +26,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-hover active" href="booking.html">Book a Test Ride</a>
+            <a class="nav-link nav-hover active" href="./booking.php">Book a Test Ride</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-hover" href="contact-us.html">Contact Us</a>
+            <a class="nav-link nav-hover" href="./contact-us.php">Contact Us</a>
         </ul>
       </div>
     </div>

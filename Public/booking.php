@@ -1,7 +1,8 @@
-
-
 <?php
-    include '../include/database.php';
+    include './include/database.php';
+    include './include/header.php';
+    include './include/navigation.php';
+    include './include/footer.php'
   ?>
 <body>
 
