@@ -1,7 +1,6 @@
 <?php
-  include '../include/database.php';
-  include '..include/header.php';
-  include '../sidebar/sidebar.php';
+  include './include/database.php';
+  include './include/header.php';
 ?>
 
 <body>
@@ -26,7 +25,8 @@
   <!-- Layout -->
   <div id="layout">
 
-    <!-- Sidebar -->
+    <!-- Sidebar --><?  include './include/sidebar.php';
+?>
     
 
     <!-- Backdrop for mobile -->

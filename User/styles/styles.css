@@ -8,20 +8,20 @@
     }
 
     .card {
-      border-radius: 20px;
+      border-radius: 5px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
     .btn-custom {
       background: #d1c734;
       color: white;
-      border-radius: 50px;
+      border-radius: 5px;
       transition: 0.3s;
     }
     .btn-custom:hover {
       background: #9c941c;
     }
     .form-control {
-      border-radius: 50px;
+      border-radius: 5px;
     }
 
        
