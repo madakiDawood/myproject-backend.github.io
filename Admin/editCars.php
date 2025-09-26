@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,15 +13,11 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
-</head>
-<body>
+    referrerpolicy="no-referrer" /></head>
 
-  <!-- Layout -->
- <div class="layout">
-    
+<body>
+  <div class="layout">
     <div id="sidebar" class="sidebar">
-      <!-- <h2 class="h5 mb-3 pb-3 sidebar-text">Admin Panel</h2> -->
       
 
       <ul class="nav flex-column py-4">
@@ -70,12 +67,13 @@
       </ul>  
     </div>
 
-    
+
+
 
       <!-- Main Content -->
   <main>
     <form method="POST" class="form-control shadow p-4">
-      <h2 class="text-center mb-4">Add Cars</h2>
+      <h2 class="text-center mb-4">Edit Car</h2>
 
       <div class="mb-3">
         <label for="carModel" class="form-label">Car Model</label>
@@ -112,7 +110,7 @@
         <input type="file" class="form-control" id="carImage">
       </div>
 
-      <button type="submit" class="btn btn-success w-100">Add Car</button>
+      <button type="submit" class="btn btn-success w-100">Save Car</button>
     </form>
   </main>
 

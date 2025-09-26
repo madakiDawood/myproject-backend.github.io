@@ -1,0 +1,126 @@
+:root {
+  --sidebar-width: 250px;
+  --sidebar-collapsed: 80px;
+}
+
+body {
+  background: #000000;
+  text-decoration: none;
+}
+
+.layout{
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #6b4444;
+  color: #181313;
+  height: 100%s;
+  transition: width 0.3s ease, transform 0.3s ease;
+  padding: 1rem;
+  width: 250px;
+  position: relative;
+}
+
+main{
+    width: 100%;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+  transition: width 0.5s ease-in-out;
+}
+
+.sidebar .sidebar-text {
+  transition: 0.2s ease-in-out;
+}
+.sidebar.collapsed .sidebar-text {
+  visibility: hidden;
+}
+
+.sidebar .nav-link {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.sidebar .dropdown-menu {
+  background: #9b564d !important;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+
+}
+.sidebar .dropdown-item {
+  color: #fff;
+  border-radius: 0.35rem;
+}
+.sidebar .dropdown-item:hover {
+  background: #9e8a88;
+  color: #ffffff;
+}
+
+
+
+main {
+  flex: 1;
+  padding: 1.25rem;
+  width: 100%;
+  position: relative;
+}
+
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #0aff02;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .sidebar{
+        width: 80px;
+    }
+    .sidebar-text{
+        display: none;
+    }
+}
+
+.topbar{
+  margin-bottom: 5rem;
+}
+
+
+.table img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.table thead {
+  background-color: #002549;
+  color: #fff;
+}
+
+.table tbody tr:hover {
+  background-color: #ff0606;
+}
+
+.car-description {
+  max-width: 350px;
+}
+
+.table-responsive {
+  padding: 1rem;
+  overflow: visible;
+}
+
+.card span {
+  font-weight: bold;
+}

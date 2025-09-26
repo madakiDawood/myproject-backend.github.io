@@ -18,15 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const backdrop = document.getElementById("backdrop");
       const mq       = window.matchMedia("(max-width: 768px)");
 
-      function openMobile(open) {
-        if (open) {
-          sidebar.classList.add("open");
-          backdrop.classList.add("show");
-        } else {
-          sidebar.classList.remove("open");
-          backdrop.classList.remove("show");
-        }
-      }
+     
 
       toggle.addEventListener("click", () => {
         if (mq.matches) {
@@ -61,3 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         growthEl.textContent = data[k].growth;
       });
     });
+
+     function toggleMenu() {
+      document.getElementById(".sidebar").classList.toggle("active");
+    }
