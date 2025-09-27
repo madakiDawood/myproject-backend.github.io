@@ -17,7 +17,7 @@
 
 <body>
   <div class="layout">
-    <div id="sidebar" class="sidebar">
+    <div id="sidebar" class="sidebar m-3" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
       
 
       <ul class="nav flex-column py-4">

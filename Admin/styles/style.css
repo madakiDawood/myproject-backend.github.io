@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
 }
 
+
 .sidebar {
   background: #6b4444;
   color: #181313;
@@ -21,10 +22,9 @@ body {
   padding: 1rem;
   width: 250px;
   position: relative;
-}
-
-main{
-    width: 100%;
+  border-radius: 5px;
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px;
 }
 
 .sidebar.collapsed {

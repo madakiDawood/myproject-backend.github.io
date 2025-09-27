@@ -19,7 +19,7 @@
   
   <div class="layout">
 
-    <div id="sidebar" class="sidebar">
+    <div id="sidebar" class="sidebar m-3" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
       <!-- <h2 class="h5 mb-3 pb-3 sidebar-text">Admin Panel</h2> -->
       
 

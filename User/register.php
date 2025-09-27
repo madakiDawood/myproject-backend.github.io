@@ -1,7 +1,15 @@
-<?php
-  include 'include/header.php';
-  include 'include/database.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Test Ride | My Showroom</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+
+
 <body>
   <div class="card p-4" style="width: 400px;">
     <h3 class="text-center mb-3">Register</h3>
@@ -22,11 +30,12 @@
         <label class="form-label">Confirm Password</label>
         <input type="password" class="form-control" placeholder="Confirm password" required>
       </div>
-      <button type="submit" class="btn btn-custom w-100">Register</button>
+      <button type="submit" class="btn btn-secondary w-100">Register</button>
     </form>
     <p class="text-center mt-3">
-      Already have an account? <a href="login.html">Login</a>
+      Already have an account? <a href="login.php">Login</a>
     </p>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

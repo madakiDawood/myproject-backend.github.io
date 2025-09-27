@@ -18,10 +18,8 @@
 
 <body>
   <div class="layout">
-  <div id="sidebar" class="sidebar">
-      <!-- <h2 class="h5 mb-3 pb-3 sidebar-text">Admin Panel</h2> -->
+    <div id="sidebar" class="sidebar m-3" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
       
-
       <ul class="nav flex-column py-4">
         <li class="nav-item">
           <div class="py-3">
